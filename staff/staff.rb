@@ -1,11 +1,11 @@
-require_relative './zoo.rb'
-class Staff < ZooInhabitant
-  def initialize(name = "Staff Member", age = "16+", favouriteFood = "Pizza!", team = "general staff", subrole = "Administrative/ customer support")
-    # super(name)
-    # super(age)
-    # super(favouriteFood)
+require_relative '../zoo'
+require_relative '../environment'
 
-    # super
+
+class Staff < ZooInhabitant
+  include Environments
+
+  def initialize(name = "Staff Member", age = "16+", favouriteFood = "Pizza!", team = "general staff", subrole = "Administrative/ customer support")
 
     @name = name
     @age = age
@@ -23,6 +23,11 @@ class Staff < ZooInhabitant
     puts "#{@name} is in the #{@team} team and is tasked with #{@subrole}"
   end
 
+  def self.habitat
+    Temperate.info
+  end
+
+
 end
 
 sandra = Staff.new "Sandra", 28, "Flammenkuchen!"
@@ -31,3 +36,4 @@ sandra.name
 sandra.age
 sandra.favouriteFood
 sandra.play
+Staff.habitat

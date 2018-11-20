@@ -30,7 +30,7 @@ class ZooInhabitant
   end
 end
 
-Bob = ZooInhabitant.new "Bob", 24, "Hot Dogs!"
-Bob.play
-Bob.favouriteFood
-Bob.age
+# Bob = ZooInhabitant.new "Bob", 24, "Hot Dogs!"
+# Bob.play
+# Bob.favouriteFood
+# Bob.age
