@@ -17,6 +17,10 @@ class Gibbon < Animal
     puts "Harwoooo"
   end
 
+  def location
+    super
+    puts "Specifically in the gibbon enclosure (hopefully!)"
+  end
 end
 
 Gary = Gibbon.new "Gary", 4, "Marshmallow"
