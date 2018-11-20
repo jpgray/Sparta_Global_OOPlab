@@ -1,4 +1,4 @@
-require_relative './zoo.rb'
+require_relative '../zoo.rb'
 class Animal < ZooInhabitant
-  
+
 end
