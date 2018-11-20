@@ -9,6 +9,10 @@ class ZooInhabitant
     puts "Currently at the SuperZoo"
   end
 
+  def planet
+    puts "Earth"
+  end
+
   def name
     puts "#{@name}"
   end

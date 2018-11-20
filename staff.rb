@@ -14,6 +14,11 @@ class Staff < ZooInhabitant
     @subrole = subrole
   end
 
+# play override here for staff only
+  def play
+    puts "#{@name} is slacking off when they should be working!"
+  end
+
   def role
     puts "#{@name} is in the #{@team} team and is tasked with #{@subrole}"
   end
@@ -25,3 +30,4 @@ sandra.role
 sandra.name
 sandra.age
 sandra.favouriteFood
+sandra.play
